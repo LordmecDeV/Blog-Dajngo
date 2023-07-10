@@ -1,0 +1,476 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../">
+        <img src="../images/bulma.png" alt="Logo">
+      </a>
+      <span class="navbar-burger burger" data-target="navbarMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <div class=" navbar-item">
+          <div class="control has-icons-left">
+            <input class="input is-rounded" type="email" placeholder="Search">
+            <span class="icon is-left">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+        </div>
+        <a class="navbar-item is-active is-size-5 has-text-weight-semibold">
+          Home
+        </a>
+        <a class="navbar-item is-size-5 has-text-weight-semibold">
+          Examples
+        </a>
+        <a class="navbar-item is-size-5 has-text-weight-semibold">
+          Features
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END NAV -->
+
+  <!-- Header -->
+  <section class="hero is-fullheight is-fullheight-with-navbar" style="background-color:hsl(141, 53%, 53%);">
+    <div class="hero-body">
+      <div class="wrapper" style="width: 100%;">
+        <svg>
+          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+            &lt;h1&gt;Hello world&lt;/h1&gt;
+          </text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2 has-text-centered">About Me</h3>
+      <h4 class="subtitle is-5 has-text-centered">Jack of all trades, master of "some"</h4>
+      <div class="container has-text-centered">
+        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
+          field of
+          <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
+          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+          believes
+          in gaining a competitive edge and giving back to the community.</p>
+      </div>
+    </div>
+
+    <div class="columns mt-5">
+      <div class="column">
+        <!-- Profile -->
+        <div class="card height-card is-large shadow p-3 mb-5 bg-body rounded-5 h-100">
+          <div class="card-content">
+            <h3 class="title is-4">Profile</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>Guru's Lab</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>0123-456789</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>minion@despicable.me</td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons is-centered mt-5">
+              <a href="#" class="button rounded is-primary"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              <a href="#" class="button rounded is-primary"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card height-card is-large shadow p-3 mb-5 bg-body rounded-5 h-100">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://img.freepik.com/vetores-gratis/desenvolvedores-de-software-trabalhando-na-codificacao-de-scripts-engenheiro-de-programacao-de-caracteres-em-php-python-javascript-e-outras-linguagens_90220-243.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Skills -->
+        <div class="card height-card is-large shadow p-3 mb-5 bg-body rounded-5 h-100">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Vue.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Node.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="75" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5/CSS3</strong>
+                      <br>
+                      <progress class="progress is-primary" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills tags -->
+  <!-- <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
+            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
+            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
+            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
+        </div> -->
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading mb-6">
+      <h3 class="title is-2 has-text-centered">Articles</h3>
+      <h4 class="subtitle is-5 has-text-centered">What are you looking for?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box rounded-4 shadow-lg">
+            <div class="content">
+              <img src="https://logosmarcas.net/wp-content/uploads/2021/09/Massachusetts-Institute-of-Technology-Logo.png" class="rounded" alt="Thumbnail">
+              <h4 class="title is-5 mt-3">MIT</h4>
+              The Massachusetts Institute of Technology (MIT) is a prestigious private research university located in Cambridge, Massachusetts. Established in 1861, MIT is renowned for its cutting-edge research, technological innovation, and rigorous academic programs. It is dedicated to advancing knowledge and educating students in science, engineering, technology, and related fields. With a strong emphasis on interdisciplinary collaboration and hands-on learning, MIT fosters an environment of creativity and innovation. It is a hub for brilliant minds, breakthrough discoveries, and impactful contributions to society, making it a global leader in education and research.
+            </div>
+            <a href="MIT" class="button is-primary">See all news...</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box rounded-4 shadow-lg">
+            <div class="content">
+              <img src="https://www.estudonauta.com/wp-content/uploads/2020/09/JavaScript.png" class="rounded" alt="Thumbnail">
+              <h4 class="title is-5 mt-3">JavaScript</h4>
+              JavaScript is a high-level programming language commonly used for creating interactive and dynamic web pages. Developed in the mid-1990s, JavaScript is a versatile language that allows developers to add functionality and interactivity to websites. It runs directly in the web browser and can be used to manipulate HTML elements, handle user interactions, perform calculations, and communicate with servers. JavaScript has become an essential tool for front-end web development, enabling the creation of engaging user interfaces and responsive web applications. It continues to evolve with new features and frameworks, making it a fundamental component of modern web development.
+            </div>
+            <a href="JavaScript" class="button is-primary">See all news...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box shadow-lg rounded-4">
+            <div class="content">
+              <img src="https://misterpostman.com.br/wp-content/uploads/2022/08/Ultimas-atualizacoes-da-tecnologia-de-inteligencia-artificial-scaled-1-jpg.webp" class="rounded" alt="Thumbnail">
+              <h4 class="title is-5 mt-3">Artificial intelligence</h4> 
+              Artificial Intelligence (AI) is a field of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. AI technologies, such as machine learning and deep learning, enable computers to learn from data, make decisions, and solve complex problems. AI has diverse applications in various industries and has the potential to revolutionize how we live and work.
+            </div>
+            <a href="IA" class="button is-primary">See all news...</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box shadow-lg rounded-4">
+            <div class="content">
+              <img src="https://coodesh.com/blog/wp-content/uploads/2022/02/carreira-de-back-end-laravel-1152x655.jpg" class="rounded" alt="Thumbnail">
+              <h4 class="title is-5 mt-3">Laravel</h4>
+              PHP is a widely-used server-side scripting language primarily designed for web development. Developed in the mid-1990s, PHP stands for "PHP: Hypertext Preprocessor." It is an open-source language that can be embedded within HTML code or run as a standalone script. PHP enables the creation of dynamic web pages by allowing developers to generate dynamic content, interact with databases, handle form submissions, and perform various server-side tasks. It has a large community and a vast ecosystem of frameworks, libraries, and tools that facilitate rapid web development.
+            </div>
+            <a href="PHP" class="button is-primary">See all news...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2 has-text-centered">Information Blending</h3>
+      <h4 class="subtitle is-5 has-text-centered">Technology</h4>
+    </div>
+  </section>
+
+  <section class="container">
+    {% if article %}
+      <section class="blog-posts">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-10 is-offset-1">
+              <div class="columns featured-post is-multiline">
+                <div class="column is-12 post">
+                  <article class="columns featured">
+                    <div class="column is-7 post-img ">
+                        {% if article.urlToImage %}
+                      <img src="{{ article.urlToImage }}" alt="Thumbnail">
+                        {% else %}
+                        <div class="custom-loader"></div>
+                        {% endif %}
+                    </div>
+                    <div class="column is-5 featured-content va">
+                      <div>
+                        <h3 class="heading post-category">Django</h3>
+                        <h1 class="title post-title">{{ article.title }}</h1>
+                        <p class="post-excerpt">{{ article.description }}</p>
+                        <br>
+                        <a href="{{ article.url }}" class="button is-primary">View more...</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                {% else %}
+                  <p>Nenhuma notícia encontrada.</p>
+                {% endif %}
+              </div>
+              <hr>
+              
+              <div class="columns is-multiline">
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      {% if laravel.urlToImage %}
+                          <img src="{{ laravel.urlToImage }}" alt="Thumbnail">
+                        {% else %}
+                          <div class="custom-loader"></div>
+                        {% endif %}
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Laravel</h3>
+                      <h1 class="title post-title">{{ laravel.title }}</h1>
+                      <p class="post-excerpt">{{ laravel.description }}</p>
+                      <br>
+                      <a href="{{ laravel.url }}" class="button is-primary">View more...</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-6">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      {% if javascript.urlToImage %}
+                          <img src="{{ javascript.urlToImage }}" alt="Thumbnail">
+                        {% else %}
+                          <div class="custom-loader"></div>
+                        {% endif %}
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">JS</h3>
+                      <h1 class="title post-title">{{ javascript.title }}</h1>
+                      <p class="post-excerpt">{{ javascript.description }}</p>
+                      <br>
+                      <a href="{{ javascript.url }}" class="button is-primary">View more...</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      {% if elon_musk.urlToImage %}
+                        <img src="{{ elon_musk.urlToImage }}" alt="Thumbnail">
+                      {% else %}
+                        <div class="custom-loader"></div>
+                      {% endif %}
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">PHP</h3>
+                      <h1 class="title post-title">{{ elon_musk.title }}</h1>
+                      <p class="post-excerpt">{{ elon_musk.description }}</p>
+                      <br>
+                      <a href="{{ elon_musk.url }}" class="button is-primary">View more...</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      {% if framework.urlToImage %}
+                        <img src="{{ framework.urlToImage }}" alt="Thumbnail">
+                      {% else %}
+                        <div class="custom-loader"></div>
+                      {% endif %}
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Framework</h3>
+                      <h1 class="title post-title">{{ framework.title }}</h1>
+                      <p class="post-excerpt">{{ framework.description }}</p>
+                      <br>
+                      <a href="{{ framework.url }}" class="button is-primary">View more...</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="column post is-4">
+                  <article class="columns is-multiline">
+                    <div class="column is-12 post-img">
+                      {% if node.urlToImage %}
+                        <img src="{{ node.urlToImage }}" alt="Thumbnail">
+                      {% else %}
+                        <div class="custom-loader"></div>
+                      {% endif %}
+                    </div>
+                    <div class="column is-12 featured-content ">
+                      <h3 class="heading post-category">Node</h3>
+                      <h1 class="title post-title">{{ node.title }}</h1>
+                      <p class="post-excerpt">{{ node.description }}</p>
+                      <br>
+                      <a href="{{ node.url }}" class="button is-primary">View more...</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+      </section>
+</section>
+
+
+    
+  <!-- end tiny modal card -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+ 
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>    
+    <script src="../js/wild.js"></script>
+
+  <!-- Achievement Level -->
+  <!-- <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Tweets</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Following</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Followers</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Likes</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2 has-text-centered">Contact</h3>
+        <h4 class="subtitle is-5 has-text-centered">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email input" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-link  is-normal"><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- Footer -->
+  {% endblock %}

@@ -1,0 +1,134 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+ <!-- Navigation bar -->
+ <nav class="navbar is-light is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Image -->
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <figure class="image is-16by9">
+              <img src="{{blog.imagem}}" alt="blog image"> 
+            </figure>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <div class="content is-medium">
+                <h2 class="subtitle is-4">{{blog.legenda}}</h2>
+                <div class="control"><span class="tag is-info is-uppercase ">ARTIGO</span></div>
+
+                <h1 class="title">{{blog.nome}}</h1>
+                <p>
+                  {{blog.descrição}}
+                  </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="is-divider"></div>
+
+        <div class="container">
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+ 
+           <a class="button bd-fat-button is-info is-light bd-pagination-prev" href="#" title="previous article">
+            <span class="icon is-left">
+              <i class="fa fa-arrow-left"></i>
+            </span>
+            <span>
+              <strong>Artigo anterior</strong>
+            </span>
+          </a>
+
+          <a class="button bd-fat-button is-info is-light bd-pagination-prev" href="#" title="next article">
+            <strong>Proximo artigo</strong>
+            <span class="icon is-left">
+              <i class="fa fa-arrow-right"></i>
+            </span>
+            <span>
+            </span>
+          </a>
+          </nav>
+         
+</div>
+
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+{% endblock %}

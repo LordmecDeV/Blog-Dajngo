@@ -1,0 +1,195 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../">
+          <img src="../images/bulma.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <div class=" navbar-item">
+            <div class="control has-icons-left">
+              <input class="input is-rounded" type="email" placeholder="Search">
+              <span class="icon is-left">
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+          </div>
+          <a class="navbar-item is-active is-size-5 has-text-weight-semibold">
+            Home
+          </a>
+          <a class="navbar-item is-size-5 has-text-weight-semibold">
+            Examples
+          </a>
+          <a class="navbar-item is-size-5 has-text-weight-semibold">
+            Features
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+
+  <!-- Image -->
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <figure class="image is-16by9">
+              <img src="{{ js.0.urlToImage }}" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <div class="content is-medium">
+                <h2 class="subtitle is-4">{{ js.0.publishedAt }}</h2>
+                <h1 class="title">{{ js.0.title }}</h1>
+                <p>{{ js.0.description }}</p>
+              </div>
+              <a href="{{ js.0.url }}" class="button is-primary">View more...</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="is-divider"></div>
+
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <div class="content is-medium">
+                <h2 class="subtitle is-4">{{ js.1.publishedAt }}</h2>
+                <h1 class="title">{{ js.1.title }}</h1>
+                <p>{{ js.1.description }}</p>
+              </div>
+              <a href="{{ js.1.url }}" class="button is-primary">View more...</a>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- newsletter -->
+  <section class="section">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="container has-text-centered is-fluid">
+          <div class="hero is-light">
+            <div class="hero-primary ">
+              <h2 class="title is-4">Sign up for our newsletter</h2>
+                <div class="column is-6 is-offset-3">
+                  <div class="field has-addons has-addons-centered">
+                    <div class="control is-expanded">
+                      <input class="input " type="text" placeholder="Email address">
+                    </div>
+                    <div class="control">
+                      <a class="button is-primary">
+                        Subscribe
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="container">
+
+        <section class="section">
+          <div class="columns is-variable is-8">
+            <div class="column is-5 is-offset-1 ">
+              <div class="content is-medium">
+                <h2 class="subtitle is-5 has-text-grey">{{ js.2.publishedAt }}</h2>
+                <h1 class="title has-text-black is-3">{{ js.2.title }}</h1>
+                <p class="has-text-dark">{{ js.2.description }}</p>
+              </div>
+              <a href="{{ js.2.url }}" class="button is-primary">View more...</a>
+            </div>
+            <div class="column is-5">
+              <div class="content is-medium">
+                <h2 class="subtitle is-5 has-text-grey">{{ js.3.publishedAt }}</h2>
+                <h1 class="title has-text-black is-3">{{ js.3.title }}</h1>
+                <p class="has-text-dark">{{ js.3.description }}</p>
+              </div>
+              <a href="{{ js.3.url }}" class="button is-primary">View more...</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="is-divider"></div>
+
+        <section class="section">
+          <div class="columns is-variable is-8">
+            <div class="column is-5 is-offset-1">
+              <div class="content is-medium">
+                <h2 class="subtitle is-5 has-text-grey">{{ js.4.publishedAt }}</h2>
+                <h1 class="title has-text-black is-3">{{ js.4.title }}</h1>
+                <p class="has-text-dark">{{ js.4.description }}</p>
+              </div>
+              <a href="{{ js.4.url }}" class="button is-primary">View more...</a>
+            </div>
+            <div class="column is-5">
+              <div class="content is-medium">
+                <h2 class="subtitle is-5 has-text-grey">{{ js.5.publishedAt }}</h2>
+                <h1 class="title has-text-black is-3">{{ js.5.title }}</h1>
+                <p class="has-text-dark">{{ js.5.description }}</p>
+              </div>
+              <a href="{{ js.5.url }}" class="button is-primary">View more...</a>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+{% endblock %}
